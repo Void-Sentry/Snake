@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Snake</string>
+    <string name="novo_jogo">New Game</string>
+    <string name="continuar">Continue</string>
+    <string name="configura_es">Settings</string>
+    <string name="f_cil">Easy</string>
+    <string name="m_dio">Normal</string>
+    <string name="dif_ccil">Hard</string>
+    <string name="pequeno">Small</string>
+    <string name="grande">High</string>
+    <string name="voltar">Back</string>
+    <string name="voltar_ao_menu">Back to Menu</string>
+    <string name="subir">Up</string>
+    <string name="descer">Down</string>
+    <string name="direita">Right</string>
+    <string name="esquerda">Left</string>
+    <string name="pausar">Pause</string>
+    <string name="todo">Image</string>
+</resources>

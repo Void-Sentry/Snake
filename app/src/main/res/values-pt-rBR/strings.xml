@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cobrinha</string>
+    <string name="novo_jogo">Novo Jogo</string>
+    <string name="continuar">Continuar</string>
+    <string name="configura_es">Configurações</string>
+    <string name="f_cil">Fácil</string>
+    <string name="m_dio">Médio</string>
+    <string name="dif_ccil">Difícil</string>
+    <string name="pequeno">Pequeno</string>
+    <string name="grande">Grande</string>
+    <string name="voltar">Voltar</string>
+    <string name="voltar_ao_menu">Voltar ao Menu</string>
+    <string name="subir">Cima</string>
+    <string name="descer">Baixo</string>
+    <string name="direita">Direita</string>
+    <string name="esquerda">Esquerda</string>
+    <string name="pausar">Pausar</string>
+    <string name="todo">Imagem</string>
+</resources>

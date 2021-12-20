@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="telaConfigViewModel"
+            type="com.example.jogocobrinha.viewmodels.TelaConfigViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:background="@drawable/forest"
+        tools:context=".activities.TelaConfiguracao">
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="99dp"
+            android:layout_height="179dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.303">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="@{() -> telaConfigViewModel.setVelocidade(1) }"
+                android:text="@string/f_cil" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:onClick="@{() -> telaConfigViewModel.setVelocidade(2) }"
+                android:text="@string/m_dio" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:onClick="@{() -> telaConfigViewModel.setVelocidade(3) }"
+                android:text="@string/dif_ccil" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="botaoVoltar"
+            android:text="@string/voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.918" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="109dp"
+            android:layout_height="88dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.643">
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:onClick="@{() -> telaConfigViewModel.setModo(1) }"
+                android:text="@string/pequeno" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:onClick="@{() -> telaConfigViewModel.setModo(2) }"
+                android:text="@string/grande" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
